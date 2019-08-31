@@ -42,7 +42,7 @@ class Prime_array
 		//IF ENTERED INVALID INPUT SUCH AS STRING OR SPECIAL SYMBOL OR CHARACTER AND SO ON
 		catch(InputMismatchException ne)
 		{
-			System.out.println("\nPlease enter valid input\n*********************************************");
+			System.out.println("\nInvalid input\n*********************************************");
 			System.exit(0);
 		}
 		
@@ -117,16 +117,22 @@ class Prime_array
 	public static void main(String[] args)
 	{
 		int ch=1;
-		do
+		try{
+			do
+			{
+				s=new Scanner(System.in);
+				Prime_array p=new Prime_array();
+				p.find_prime();
+				p.print();
+				System.out.println("\n.............................................");
+				System.out.println("\n\nDo you want to continue? 1 for yes");
+				ch=s.nextInt();
+				System.out.println("\n.............................................");
+			}while(ch==1);
+		}
+		catch(InputMismatchException ie)
 		{
-			s=new Scanner(System.in);
-			Prime_array p=new Prime_array();
-			p.find_prime();
-			p.print();
-			System.out.println("\n.............................................");
-			System.out.println("\n\nDo you want to continue? 1 for yes");
-			ch=s.nextInt();
-			System.out.println("\n.............................................");
-		}while(ch==1);
+			System.out.println("Invalid input entered\n*********************************************");
+		}
 	}//end main
 }//end class
