@@ -42,21 +42,21 @@ class Prime_array
 		//IF ENTERED INVALID INPUT SUCH AS STRING OR SPECIAL SYMBOL OR CHARACTER AND SO ON
 		catch(InputMismatchException ne)
 		{
-			System.out.println("\nPlease enter valid input\n");
+			System.out.println("\nPlease enter valid input\n*********************************************");
 			System.exit(0);
 		}
 		
 		//IF ENETERED NEGATIVE SIZE ARRAY
 		catch(NegativeArraySizeException ne)
 		{
-			System.out.println("\nNegative array is entered");
+			System.out.println("\nNegative array is entered\n*********************************************");
 			System.exit(0);
 		}
 		
 		//IF ARRAY LENGTH IS PASSED AS 0
 		catch(IllegalArgumentException il)
 		{
-			System.out.println("\nArray size can't be 0");
+			System.out.println("\nArray size can't be 0\n*********************************************");
 			System.exit(0);
 		}
 	}//end constructor
