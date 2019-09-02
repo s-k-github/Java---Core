@@ -1,1 +1,1 @@
-# This Repository contain java programs only. First line of each code contains objective of the code.
+# This Repository contain java programs only. First few lines of each code displays the objective
