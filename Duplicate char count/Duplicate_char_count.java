@@ -80,5 +80,5 @@ class Duplicate_char_count
 			}
 		}while(!result);
 		System.out.println("\n\nDUPLICATE CHARACTER PROGRAM ENDED\n");
-	}//end psvm
+	}//end PSVM
 }//end class
