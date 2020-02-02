@@ -1,5 +1,6 @@
-//please check the output for neet desciption of outcome.
-//all possible input are considered
+/*Problem Statement: 1. Largest character will be printed from the provided string.
+                     2. Input will only contain characters. 
+		     3. Input can't be space/whitespace.   */
 
 import java.util.*;
 class Largest_char_in_string
@@ -38,8 +39,7 @@ class Largest_char_in_string
 	}
 	void find_largest_char()
 	{
-		try
-		{
+		
 		int max=0;
 		string=string.replaceAll(" ","");
 		for(int i=1;i<string.length();i++)
@@ -48,11 +48,6 @@ class Largest_char_in_string
 				max=i;
 		}
 		System.out.println("Largest character of "+string+" character is: "+string.charAt(max)+"\n----------------------------------------------");
-		}
-		catch(StringIndexOutOfBoundsException ie)
-		{
-			System.out.println("\nPlease check input "+ ie+"\n----------------------------------------------");
-			System.exit(0);
 		}
 	}
 	
