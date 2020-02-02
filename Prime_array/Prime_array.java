@@ -134,5 +134,5 @@ class Prime_array
 		{
 			System.out.println("Invalid input entered\n*********************************************");
 		}
-	}//end main
+	}//end PSVM
 }//end class
