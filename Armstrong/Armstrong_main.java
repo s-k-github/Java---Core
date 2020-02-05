@@ -2,8 +2,7 @@
   2: Program will keep running unless
      a: user asks to abort it
 	 b: exception occurs
-  3: Inheritance
-*/
+  3: Inheritance                           */
 import java.util.*;
 
 //main class
